@@ -336,8 +336,7 @@ ul {
 
 .team-media-list {
   display: flex;
-  margin-left: 32px;
-  margin-right: 32px;
+  justify-content: center;
 }
 
 .team-media-item + .team-media-item {
@@ -536,6 +535,7 @@ ul {
 
 .footer-media-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer-media-link {
