@@ -159,7 +159,8 @@ ul {
 
 .contact-list__link {
   color: var(--second-text-color);
-  display: inline-flex;
+  display: flex;
+  align-items: center;
 }
 
 .mail-icon {
@@ -185,7 +186,9 @@ ul {
   color: var(--white-text-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(..//images/main-page/hero-img.jpg);
-
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -237,6 +240,9 @@ ul {
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--second-background-color);
   background-repeat: no-repeat;
@@ -246,7 +252,6 @@ ul {
 .benefits-icon {
   width: 70px;
   height: 70px;
-  margin: 25px 100px;
 }
 
 .clock-icon::before {
@@ -400,7 +405,7 @@ ul {
 }
 
 .clients-link:hover .clients-icon,
-.clients-link:focus.clients-icon {
+.clients-link:focus .clients-icon {
   fill: var(--accent-text-color);
 }
 
@@ -459,7 +464,8 @@ ul {
   border: 1px solid #eeeeee;
 }
 
-.works-examples__item:hover {
+.works-examples__item:hover,
+.works-examples__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -518,10 +524,10 @@ ul {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-media {
-  margin-top: 12px;
   margin-left: 70px;
 }
 
